@@ -9,7 +9,7 @@ function App() {
       <div className='cardsHolder'>
         {data.cards.map((item, id) => {
           return (
-            <Card key={id} data={item} />
+            <Card key={id} data={item} id={id} />
           )
         })}
       </div>

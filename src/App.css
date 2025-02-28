@@ -1,19 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Iceland&display=swap');
 
 .App {
     background-image: url('../public/bg.png');
     background-size: contain;
+    background-repeat: repeat;
     width: 100%;
     height: 100%;
 }
 
 h1 {
-    font-family: "Sriracha", serif;
+    font-family: "Iceland", serif;
     font-weight: 400;
     font-style: normal;
     color: rgb(179, 211, 255);
     text-align: center;
     padding-top: 5%;
+    font-size: 3rem;
 }
 
 .cardsHolder {
@@ -21,7 +23,15 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 2rem;
     margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .cardsHolder {
+        flex-direction: column;
+        align-items: center;
+    }
 }
